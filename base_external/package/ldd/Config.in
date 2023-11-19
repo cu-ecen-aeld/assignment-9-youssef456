@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LDD
+	bool "ldd"
+	help
+	  Loads scull components and misc-modules as per the instructions in assignment.
