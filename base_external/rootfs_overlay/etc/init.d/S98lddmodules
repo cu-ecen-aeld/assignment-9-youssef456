@@ -4,13 +4,17 @@ case "$1" in
     start)
          echo "scull_load and misc modules"
          /usr/bin/scull_load
-         /usr/bin/module_load faulty  
-         modprobe hello       
+         /usr/bin/module_load faulty
+         /usr/bin/aesdchar_load 
+   	 modprobe aesdchar
+         modprobe hello    
          ;;
     stop)
          echo "scull_unload and misc modules"
          /usr/bin/scull_unload
          /usr/bin/module_unload faulty
+         /usr/bin/aesdchar_unload
+         rmmod aesdchar
          rmmod hello
          ;;
     *)
