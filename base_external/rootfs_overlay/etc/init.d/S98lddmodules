@@ -5,7 +5,7 @@ case "$1" in
          echo "scull_load and misc modules"
          /usr/bin/scull_load
          /usr/bin/module_load faulty
-         /usr/bin/aesdchar_load 
+         /usr/bin/aesdchar_load
    	 modprobe aesdchar
          modprobe hello    
          ;;
